@@ -11,12 +11,12 @@ function Home() {
           <img src={logo} className="w-[100px] h-[100px]" alt="" />
         </div>
         {/* div for texts */}
-        <div className="flex justify-center items-center flex-row">
+        <div className="flex justify-center items-center flex-col">
           <h1 className="text-[32px] font-bold">
             Safe & Reliable <span className="text-[#f15f22]">Logistic </span>
             Solution!
           </h1>
-          <p className="w-[200px] h-[250px]">
+          <p className="w-[100%] h-[250px] mt-[30px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
