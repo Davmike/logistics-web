@@ -16,7 +16,7 @@ function Home() {
             Safe & Reliable <span className="text-[#f15f22]">Logistic </span>
             Solution!
           </h1>
-          <p className="w-[100%] h-[250px] mt-[30px]">
+          <p className="w-[100%] h-[200px] mt-[30px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type

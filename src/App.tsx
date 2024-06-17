@@ -2,6 +2,7 @@
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import { MyContext } from "./Components/Context";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <MyContext.Provider value={{}}>
         {/* <Header /> */}
         <Home />
+        <About />
         <Footer />
       </MyContext.Provider>
     </>
