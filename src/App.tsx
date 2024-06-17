@@ -3,6 +3,7 @@ import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import { MyContext } from "./Components/Context";
 import About from "./Components/About";
+import withLoading from "./Components/WithLoading";
 
 function App() {
   return (
@@ -17,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default withLoading(App);
