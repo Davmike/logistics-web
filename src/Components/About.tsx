@@ -2,8 +2,25 @@ import truck from "../../public/assets/truck.png";
 import ship from "../../public/assets/ship.png";
 import airplane from "../../public/assets/airplane.png";
 import container from "../../public/assets/container.jpg";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 function About() {
+  // on scroll show component smooth effect
+  useEffect(() => {
+    const config = {
+      origin: "top",
+      distance: "50px",
+      duration: 1000,
+      delay: 300,
+      opacity: 0,
+      easing: "ease-in-out",
+      reset: false,
+    };
+
+    ScrollReveal().reveal("#about", config);
+  }, []);
+
   const categories = [
     { title: "Land Transport", text: "lorem ipsum 1", src: truck },
     { title: "Ship Transport", text: "lorem ipsum 2", src: ship },
@@ -11,7 +28,7 @@ function About() {
   ];
 
   return (
-    <div>
+    <div id="about">
       <div className="px-[15px] mt-[30px] flex justify-center items-center flex-col">
         <h2 className="text-[25px] font-semibold text-[#2c234d]">
           Why Clients Choose Us
@@ -26,7 +43,7 @@ function About() {
             // main div
             <div
               key={index}
-              className="flex px-[23px] w-[250px] lg:w-[400px] items-center bg-[white] py-[25px] rounded-[10px]"
+              className="flex px-[23px] w-[250px] lg:w-[400px] items-center bg-[white] py-[25px] rounded-[10px] lg:justify-center lg:items-center"
             >
               {/* div for only images */}
               <div>
@@ -58,11 +75,11 @@ function About() {
             </h2>
             <div className="w-[50px] h-[1px] bg-[#f15f22]"></div>
           </div>
-          <h2 className="text-[18px] font-bold mt-[30px] lg:w-[400px]">
+          <h2 className="text-[18px] font-bold mt-[30px] lg:w-[500px] lg:text-[22px]">
             WebLance, based in Tbilisi, Georgia, was founded by David Mikeladze
             and Giorgi Mamulashvili.
           </h2>
-          <p className="text-[15px] mt-[10px] lg:w-[400px]">
+          <p className="text-[15px] mt-[10px] lg:w-[500px] lg:text-[19px]">
             Our goal is simple: to combine creativity and technology to create
             unique digital solutions that help businesses succeed online. At
             WebLance, our talented team of developers, designers, and digital
