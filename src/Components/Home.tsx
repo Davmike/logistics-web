@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import logo from "../../public/assets/logo.png";
 import ScrollReveal from "scrollreveal";
+import { Link } from "react-scroll";
 
 function Home() {
   // on scroll show component smooth effect
@@ -55,12 +56,14 @@ function Home() {
         <p className="text-[#c4c4c4] mt-[10px] lg:text-[23px]">
           For More Information Click Below
         </p>
-        <button
-          className="px-[10px] py-[8px] bg-[#f15f22] mt-[10px] lg:px-[14px] lg:py-[12px] hover:bg-[white] hover:text-[#f15f22] duration-300 ease-in-out"
-          id="reset"
-        >
-          Learn More
-        </button>
+        <Link to={"about"} spy={true} smooth={true} offset={0} duration={500}>
+          <button
+            className="px-[10px] py-[8px] bg-[#f15f22] mt-[10px] lg:px-[14px] lg:py-[12px] hover:bg-[white] hover:text-[#f15f22] duration-300 ease-in-out"
+            id="reset"
+          >
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   );
