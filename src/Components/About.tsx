@@ -10,11 +10,11 @@ function About() {
   ];
 
   return (
-    <div className="pt-[40px] flex justify-center flex-wrap">
+    <div className="py-[40px] flex flex-wrap gap-y-[30px] md:justify-center md:gap-[50px] lg:gap-[80px]">
       {categories.map((category, index) => {
         return (
           // main div
-          <div key={index} className="flex px-[15px] mb-[30px] items-center">
+          <div key={index} className="flex px-[15px] items-center">
             {/* div for only images */}
             <div>
               <img src={category.src} className="w-[44px] h-[44px]" alt="" />
