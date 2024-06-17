@@ -45,6 +45,33 @@ function About() {
           );
         })}
       </div>
+
+      {/* about section */}
+      <div className="lg:flex lg:justify-center lg:items-center lg:gap-[40px] lg:mb-[50px] lg:mt-[50px]">
+        <div className="flex justify-center items-center">
+          <img src={container} alt="" />
+        </div>
+        <div className="px-[15px] mb-[50px]">
+          <div className="px-[15px] mt-[30px] flex justify-center items-center flex-col">
+            <h2 className="text-[25px] font-semibold text-[#2c234d]">
+              ABOUT US
+            </h2>
+            <div className="w-[50px] h-[1px] bg-[#f15f22]"></div>
+          </div>
+          <h2 className="text-[18px] font-bold mt-[30px] lg:w-[400px]">
+            WebLance, based in Tbilisi, Georgia, was founded by David Mikeladze
+            and Giorgi Mamulashvili.
+          </h2>
+          <p className="text-[15px] mt-[10px] lg:w-[400px]">
+            Our goal is simple: to combine creativity and technology to create
+            unique digital solutions that help businesses succeed online. At
+            WebLance, our talented team of developers, designers, and digital
+            strategists is dedicated to crafting powerful websites and
+            e-commerce platforms. We focus on transparency, teamwork, and
+            delivering on time to guarantee success in every project we take on.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
