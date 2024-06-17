@@ -4,29 +4,34 @@ function Home() {
   return (
     <div
       id="home"
-      className="text-[white] flex justify-center items-center flex-row"
+      className="relative text-white min-h-screen flex flex-col items-center justify-center md:items-start px-[15px]"
     >
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-black opacity-80"></div>
-      <div className="absolute px-[15px]">
-        {/* div for image */}
-        <div className="flex justify-center items-center">
-          <img src={logo} className="w-[100px] h-[100px]" alt="" />
-        </div>
-        {/* div for texts */}
-        <div className="flex justify-center items-center flex-col">
-          <h1 className="text-[32px] font-bold md:text-[40px] lg:text-[50px]">
-            We Are Logistic Company
-            <span className="text-[#f15f22]"> kptrans</span>
-          </h1>
-          <p className="w-[100%] max-w-[450px] h-[200px] mt-[30px] md:max-w-[768px] md:text-[20px] lg:text-[25px]">
-            Welcome to pktrans, your trusted partner in logistics solutions.
-            With years of experience and a commitment to excellence, we provide
-            comprehensive logistics services tailored to meet your unique needs.
-            Our team of experts ensures that your goods are transported
-            efficiently, safely, and on time, every time.
-          </p>
-        </div>
+      <div className="absolute inset-0 bg-black opacity-75"></div>
+
+      {/* Logo */}
+      <div className="absolute top-4">
+        <img src={logo} className="w-[100px] h-[100px]" alt="Logo" />
+      </div>
+
+      {/* Centered Text */}
+      <div className="relative z-10 text-center mt-[55px] md:text-left md:w-[400px] lg:w-[600px]">
+        <h1 className="text-[32px] font-bold lg:text-[50px]">
+          CONNECT YOUR BUSINESS TO
+          <span className="text-[#f15f22]"> kptrans </span>
+          FOR MORE POSSIBILITIES
+        </h1>
+      </div>
+      {/* line */}
+      <div className="w-[50px] h-[1px] bg-[white] mt-[10px] z-10"></div>
+      {/* FOR MORE INFO */}
+      <div className="z-10 mt-[10px] flex justify-center items-center flex-col md:items-start">
+        <p className="text-[#c4c4c4] mt-[10px] lg:text-[23px]">
+          For More Information Click Below
+        </p>
+        <button className="px-[10px] py-[8px] bg-[#f15f22] mt-[10px] lg:px-[14px] lg:py-[12px]">
+          Learn More
+        </button>
       </div>
     </div>
   );

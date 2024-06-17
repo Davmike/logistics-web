@@ -12,10 +12,11 @@
 
 body {
   font-family: "Barlow", sans-serif;
+  background: #f8f6f6;
 }
 
 #home {
-  background-image: url("../public/assets/background.jpg");
+  background-image: url("../public/assets/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
