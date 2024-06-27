@@ -21,7 +21,7 @@ function Footer() {
 
   const categories = [
     { title: "Tbilisi, The Area Around The Gez", src: location },
-    { title: "infoallroad@gmail.com", src: gmail },
+    { title: "info@kptrans.ge", src: gmail },
   ];
 
   return (
@@ -35,10 +35,10 @@ function Footer() {
       {/* div for mobile numbers */}
       <div className="flex flex-col" id="reset">
         <span className="text-[#F15F22] font-bold text-[25px] md:text-[30px] lg:text-[35px]">
-          +995 577 023 001
+          +995 558 08 90 50
         </span>
         <span className="text-[#F15F22] font-bold text-[25px] md:text-[30px] lg:text-[35px]">
-          +995 593 000 049
+          +995 571 57 79 99
         </span>
       </div>
       <p
