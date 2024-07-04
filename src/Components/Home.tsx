@@ -29,7 +29,7 @@ function Home() {
 
       {/* Logo */}
       <div className="absolute top-4" id="reset">
-        <img src={logo} className="w-[100px] h-[100px]" alt="Logo" />
+        <img src={logo} className="w-[140px] h-[140px]" alt="Logo" />
       </div>
 
       {/* Centered Text */}
