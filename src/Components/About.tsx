@@ -76,16 +76,16 @@ function About() {
             <div className="w-[50px] h-[1px] bg-[#f15f22]"></div>
           </div>
           <h2 className="text-[18px] font-bold mt-[30px] lg:w-[500px] lg:text-[22px]">
-            WebLance, based in Tbilisi, Georgia, was founded by David Mikeladze
-            and Giorgi Mamulashvili.
+            Welcome to kptrans, your logistic solution!
           </h2>
           <p className="text-[15px] mt-[10px] lg:w-[500px] lg:text-[19px]">
-            Our goal is simple: to combine creativity and technology to create
-            unique digital solutions that help businesses succeed online. At
-            WebLance, our talented team of developers, designers, and digital
-            strategists is dedicated to crafting powerful websites and
-            e-commerce platforms. We focus on transparency, teamwork, and
-            delivering on time to guarantee success in every project we take on.
+            Welcome to kptrans Logistic, where we redefine the standards of
+            efficiency and reliability in the logistics industry. Founded with a
+            vision to transform the way goods are transported, we have
+            established ourselves as a trusted partner for businesses worldwide.
+            Our commitment to excellence, innovation, and customer satisfaction
+            drives us to deliver unparalleled logistics solutions tailored to
+            your specific needs.
           </p>
         </div>
       </div>
