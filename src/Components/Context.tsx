@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
 
 interface ComponentsProps {
-  changeLanguage: boolean;
-  setChangeLanguage: (changeLanguage: boolean) => void;
+  changeLanguage: string;
+  setChangeLanguage: (changeLanguage: string) => void;
 }
 
 export const MyContext = createContext<ComponentsProps | null>(null);

@@ -6,7 +6,7 @@ import withLoading from "./Components/WithLoading";
 import { useState } from "react";
 
 function App() {
-  const [changeLanguage, setChangeLanguage] = useState<boolean>(false);
+  const [changeLanguage, setChangeLanguage] = useState<string>("ENG");
   return (
     <>
       <MyContext.Provider value={{ changeLanguage, setChangeLanguage }}>

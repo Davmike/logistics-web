@@ -40,13 +40,16 @@ function Home() {
           className="w-[15px] h-[15px] cursor-pointer hover:scale-125 transition-transform duration-500"
           alt=""
           onClick={() => {
-            setChangeLanguage;
+            setChangeLanguage("ENG");
           }}
         />
         <img
           src={ge}
           className="w-[15px] h-[15px] cursor-pointer hover:scale-125 transition-transform duration-500"
           alt=""
+          onClick={() => {
+            setChangeLanguage("GEO");
+          }}
         />
       </div>
 
@@ -61,9 +64,13 @@ function Home() {
         id="reset"
       >
         <h1 className="text-[32px] font-bold lg:text-[50px]">
-          CONNECT YOUR BUSINESS TO
+          {changeLanguage === "ENG"
+            ? "CONNECT YOUR BUSINESS TO"
+            : "დააკავშირეთ თქვენი ბიზნესი"}
           <span className="text-[#f15f22]"> kptrans </span>
-          FOR MORE POSSIBILITIES
+          {changeLanguage === "ENG"
+            ? "FOR MORE POSSIBILITIES"
+            : "მეტი შესაძლებლობისთვის"}
         </h1>
       </div>
       {/* line */}
@@ -77,14 +84,16 @@ function Home() {
         id="reset"
       >
         <p className="text-[#c4c4c4] mt-[10px] lg:text-[23px]">
-          For More Information Click Below
+          {changeLanguage === "ENG"
+            ? "For More Information Click Below"
+            : "დამატებითი ინფორმაციისთვის დააკლიკეთ ქვემოთ"}
         </p>
         <Link to={"about"} spy={true} smooth={true} offset={0} duration={500}>
           <button
             className="px-[10px] py-[8px] bg-[#f15f22] mt-[10px] lg:px-[14px] lg:py-[12px] hover:bg-[white] hover:text-[#f15f22] duration-300 ease-in-out"
             id="reset"
           >
-            Learn More
+            {changeLanguage === "ENG" ? "Learn More" : "გაიგეთ მეტი"}
           </button>
         </Link>
       </div>
