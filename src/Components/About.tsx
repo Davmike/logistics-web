@@ -3,9 +3,13 @@ import ship from "../../public/assets/ship.png";
 import airplane from "../../public/assets/airplane.png";
 import container from "../../public/assets/container.jpg";
 import ScrollReveal from "scrollreveal";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { MyContext } from "./Context";
 
 function About() {
+  const context = useContext(MyContext);
+  const { changeLanguage }: any = context;
+
   // on scroll show component smooth effect
   useEffect(() => {
     const config = {
@@ -22,16 +26,30 @@ function About() {
   }, []);
 
   const categories = [
-    { title: "Land Transport", text: "lorem ipsum 1", src: truck },
-    { title: "Ship Transport", text: "lorem ipsum 2", src: ship },
-    { title: "Air Transport", text: "lorem ipsum 3", src: airplane },
+    {
+      title: { en: "Land Transport", ka: "სახმელეთო ტრანსპორტი" },
+      text: { en: "lorem ipsum 1", ka: "ლორემ იპსუმ 1" },
+      src: truck,
+    },
+    {
+      title: { en: "Ship Transport", ka: "საზღვაო ტრანსპორტი" },
+      text: { en: "lorem ipsum 2", ka: "ლორემ იპსუმ 2" },
+      src: ship,
+    },
+    {
+      title: { en: "Air Transport", ka: "საჰაერო ტრანსპორტი" },
+      text: { en: "lorem ipsum 3", ka: "ლორემ იპსუმ 3" },
+      src: airplane,
+    },
   ];
 
   return (
     <div id="about">
       <div className="px-[15px] mt-[30px] flex justify-center items-center flex-col">
         <h2 className="text-[25px] font-semibold text-[#2c234d]">
-          Why Clients Choose Us
+          {changeLanguage === "ENG"
+            ? "Why Clients Choose Us"
+            : "რატომ გვირჩევს კლიენტი ჩვენ"}
         </h2>
         <div className="w-[50px] h-[1px] bg-[#f15f22]"></div>
       </div>
@@ -51,11 +69,15 @@ function About() {
               </div>
               {/* div for only texts */}
               <div className="pl-[20px]">
-                <h3 className="text-[#2c234d] text-[20px] font-semibold lg:text-[25px]">
-                  {category.title}
+                <h3 className="text-[#2c234d] text-[12px] font-semibold lg:text-[20px]">
+                  {changeLanguage === "ENG"
+                    ? category.title.en
+                    : category.title.ka}
                 </h3>
                 <p className="text-[#677294] text-[16px] font-normal lg:text-[22px]">
-                  {category.text}
+                  {changeLanguage === "ENG"
+                    ? category.text.en
+                    : category.text.ka}
                 </p>
               </div>
             </div>
@@ -71,21 +93,21 @@ function About() {
         <div className="px-[15px] mb-[50px]">
           <div className="px-[15px] mt-[30px] flex justify-center items-center flex-col">
             <h2 className="text-[25px] font-semibold text-[#2c234d]">
-              ABOUT US
+              {changeLanguage === "ENG" ? "ABOUT US" : "ჩვენს შესახებ"}
             </h2>
             <div className="w-[50px] h-[1px] bg-[#f15f22]"></div>
           </div>
           <h2 className="text-[18px] font-bold mt-[30px] lg:w-[500px] lg:text-[22px]">
-            Welcome to kptrans, your logistic solution!
+            {changeLanguage === "ENG"
+              ? "Welcome to kptrans, your logistic solution!"
+              : "კეთილი იყოს თქვენი მობრძანება kptrans-ში"}
           </h2>
           <p className="text-[15px] mt-[10px] lg:w-[500px] lg:text-[19px]">
-            Welcome to kptrans Logistic, where we redefine the standards of
-            efficiency and reliability in the logistics industry. Founded with a
-            vision to transform the way goods are transported, we have
-            established ourselves as a trusted partner for businesses worldwide.
-            Our commitment to excellence, innovation, and customer satisfaction
-            drives us to deliver unparalleled logistics solutions tailored to
-            your specific needs.
+            <div>
+              {changeLanguage === "ENG"
+                ? "Welcome to kptrans Logistic, where we redefine the standards of efficiency and reliability in the logistics industry. Founded with a vision to transform the way goods are transported, we have established ourselves as a trusted partner for businesses worldwide. Our commitment to excellence, innovation, and customer satisfaction drives us to deliver unparalleled logistics solutions tailored to your specific needs."
+                : "კეთილი იყოს თქვენი მობრძანება kptrans Logistic-ში, სადაც ჩვენ ხელახლა განვსაზღვრავთ ეფექტურობისა და საიმედოობის სტანდარტებს ლოჯისტიკური ინდუსტრიაში. დაფუძნებული ხედვით გარდაქმნის საქონლის ტრანსპორტირებას, ჩვენ ჩამოვყალიბდით, როგორც სანდო პარტნიორი ბიზნესისთვის მთელ მსოფლიოში. ჩვენი ერთგულება სრულყოფილების, ინოვაციებისა და მომხმარებელთა კმაყოფილებისკენ გვიბიძგებს მივაწოდოთ შეუდარებელი ლოჯისტიკური გადაწყვეტილებები, რომლებიც მორგებულია თქვენს კონკრეტულ საჭიროებებზე."}
+            </div>
           </p>
         </div>
       </div>
