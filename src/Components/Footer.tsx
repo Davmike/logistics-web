@@ -1,9 +1,13 @@
 import location from "../../public/assets/location.png";
 import gmail from "../../public/assets/gmail.png";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import { MyContext } from "./Context";
 
 function Footer() {
+  const context = useContext(MyContext);
+  const { changeLanguage }: any = context;
+
   // on scroll show component smooth effect
   useEffect(() => {
     const config = {
@@ -30,7 +34,9 @@ function Footer() {
         className="text-[white] font-bold text-[25px] mb-[20px] md:text-[30px] lg:text-[35px]"
         id="reset"
       >
-        We Understand The Importance Approaching Each Work!
+        {changeLanguage === "ENG"
+          ? "We Understand The Importance Approaching Each Work!"
+          : "ჩვენ გვესმის თითოეული სამუშაოს მიახლოების მნიშვნელობა!"}
       </h2>
       {/* div for mobile numbers */}
       <div className="flex flex-col" id="reset">
@@ -45,14 +51,15 @@ function Footer() {
         className="text-[white] text-[18px] font-normal mt-[25px] lg:text-[22px]"
         id="reset"
       >
-        CONTACT US
+        {changeLanguage === "ENG" ? "CONTACT US" : "დაგვიკავშირდით"}
       </p>
       <hr className="h-[1px] mt-[25px]" id="reset" />
       {/* who we are?! */}
       <div id="reset">
         <h3 className="text-[#c4c4c4] mt-[25px] lg:text-[21px]">
-          We're here to help! At KPTrans, we offer top-notch services and are
-          eager to work with you. Contact us today!
+          {changeLanguage === "ENG"
+            ? "We're here to help! At KPTrans, we offer top-notch services and are eager to work with you. Contact us today!"
+            : "ჩვენ აქ ვართ დასახმარებლად! KPTrans-ში ჩვენ გთავაზობთ უმაღლესი დონის სერვისებს და მზად ვართ ვიმუშაოთ თქვენთან. დაგვიკავშირდით დღესვე!"}
         </h3>
       </div>
       {/* soc media info */}
@@ -74,10 +81,12 @@ function Footer() {
         id="reset"
       >
         <p className="text-[#bbbcbc] text-[16px] font-light lg:text-[21px]">
-          ©Copyright wL All Right Reserved
+          {changeLanguage === "ENG"
+            ? "©Copyright wL All Right Reserved"
+            : "საავტორო უფლება wL ყველა უფლება დაცულია"}
         </p>
         <p className="text-[#bbbcbc] text-[16px] font-light lg:text-[21px]">
-          Made by{" "}
+          {changeLanguage === "ENG" ? "Made by" : "დაამზადა "}
           <a href="https://www.weblance.ge/" target="_blank">
             <span className="text-[#F15F22]">@webLance</span>
           </a>
