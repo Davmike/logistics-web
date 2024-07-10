@@ -1,9 +1,15 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import logo from "../../public/assets/logo.png";
 import ScrollReveal from "scrollreveal";
 import { Link } from "react-scroll";
+import en from "../../public/assets/us.svg";
+import ge from "../../public/assets/ge.svg";
+import { MyContext } from "./Context";
 
 function Home() {
+  const context = useContext(MyContext);
+  const { changeLanguage, setChangeLanguage }: any = context;
+
   // on scroll show component smooth effect
   useEffect(() => {
     const config = {
@@ -26,6 +32,23 @@ function Home() {
     >
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black opacity-75"></div>
+
+      {/* language section */}
+      <div className="absolute top-4 right-[20px] flex gap-[5px]">
+        <img
+          src={en}
+          className="w-[15px] h-[15px] cursor-pointer hover:scale-125 transition-transform duration-500"
+          alt=""
+          onClick={() => {
+            setChangeLanguage;
+          }}
+        />
+        <img
+          src={ge}
+          className="w-[15px] h-[15px] cursor-pointer hover:scale-125 transition-transform duration-500"
+          alt=""
+        />
+      </div>
 
       {/* Logo */}
       <div className="absolute top-4" id="reset">
