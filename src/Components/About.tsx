@@ -65,11 +65,15 @@ function About() {
             >
               {/* div for only images */}
               <div>
-                <img src={category.src} className="w-[44px] h-[44px]" alt="" />
+                <img
+                  src={category.src}
+                  className="w-[40px] h-[40px] md:w-[44px] md:h-[44px]"
+                  alt=""
+                />
               </div>
               {/* div for only texts */}
               <div className="pl-[20px]">
-                <h3 className="text-[#2c234d] text-[10px] font-semibold lg:text-[20px]">
+                <h3 className="text-[#2c234d] text-[12px] font-semibold lg:text-[20px]">
                   {changeLanguage === "ENG"
                     ? category.title.en
                     : category.title.ka}
