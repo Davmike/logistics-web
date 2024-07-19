@@ -105,8 +105,8 @@ function About() {
           <p className="text-[15px] mt-[10px] lg:w-[500px] lg:text-[19px]">
             <div>
               {changeLanguage === "ENG"
-                ? "Welcome to kptrans Logistic, where we redefine the standards of efficiency and reliability in the logistics industry. Founded with a vision to transform the way goods are transported, we have established ourselves as a trusted partner for businesses worldwide. Our commitment to excellence, innovation, and customer satisfaction drives us to deliver unparalleled logistics solutions tailored to your specific needs."
-                : "კეთილი იყოს თქვენი მობრძანება kptrans Logistic-ში, სადაც ჩვენ ხელახლა განვსაზღვრავთ ეფექტურობისა და საიმედოობის სტანდარტებს ლოჯისტიკური ინდუსტრიაში. დაფუძნებული ხედვით გარდაქმნის საქონლის ტრანსპორტირებას, ჩვენ ჩამოვყალიბდით, როგორც სანდო პარტნიორი ბიზნესისთვის მთელ მსოფლიოში. ჩვენი ერთგულება სრულყოფილების, ინოვაციებისა და მომხმარებელთა კმაყოფილებისკენ გვიბიძგებს მივაწოდოთ შეუდარებელი ლოჯისტიკური გადაწყვეტილებები, რომლებიც მორგებულია თქვენს კონკრეტულ საჭიროებებზე."}
+                ? "Welcome to kptrans, where we redefine the standards of efficiency and reliability in the logistics industry. We have established ourselves as a trusted partner for businesses in our region. Our commitment to excellence, innovation, and customer satisfaction drives us to deliver unparalleled logistics solutions tailored to your specific needs."
+                : "კეთილი იყოს თქვენი მობრძანება kptrans-ში, სადაც ჩვენ ხელახლა განვსაზღვრავთ ეფექტურობისა და საიმედოობის სტანდარტებს ლოჯისტიკური ინდუსტრიაში. , ჩვენ ჩამოვყალიბდით, როგორც სანდო პარტნიორი ბიზნესისთვის ჩვენს რეგიონში. ჩვენი ერთგულება სრულყოფილების, ინოვაციებისა და მომხმარებელთა კმაყოფილებისკენ გვიბიძგებს მივაწოდოთ შეუდარებელი ლოჯისტიკური გადაწყვეტილებები, რომლებიც მორგებულია თქვენს კონკრეტულ საჭიროებებზე."}
             </div>
           </p>
         </div>
