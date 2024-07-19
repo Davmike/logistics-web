@@ -54,8 +54,8 @@ function Home() {
       </div>
 
       {/* Logo */}
-      <div className="absolute top-4" id="reset">
-        <img src={logo} className="w-[140px] h-[140px]" alt="Logo" />
+      <div className="absolute top-[-25px] md:left-[-25px]" id="reset">
+        <img src={logo} className="w-[200px] h-[200px]" alt="Logo" />
       </div>
 
       {/* Centered Text */}
