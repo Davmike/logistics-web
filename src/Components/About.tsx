@@ -69,7 +69,7 @@ function About() {
               </div>
               {/* div for only texts */}
               <div className="pl-[20px]">
-                <h3 className="text-[#2c234d] text-[12px] font-semibold lg:text-[20px]">
+                <h3 className="text-[#2c234d] text-[11px] font-semibold lg:text-[20px]">
                   {changeLanguage === "ENG"
                     ? category.title.en
                     : category.title.ka}
